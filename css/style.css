@@ -12,6 +12,13 @@
     padding: 25px;
     place-items: center;
     background: linear-gradient(to top, rgba(200, 200, 200), white);
+
+    @media (max-width: 1280px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 880px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .produto {

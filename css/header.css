@@ -3,6 +3,11 @@ header{
     justify-content: space-evenly;
     align-items: center;
     background-color: blueviolet;
+
+    @media (max-width: 880px) {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 nav{
