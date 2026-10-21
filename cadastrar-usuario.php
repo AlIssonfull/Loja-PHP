@@ -37,13 +37,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <form method="POST">
         <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome" required>
+        <input type="text" name="nome" id="nome" required autocomplete="off">
 
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" required>
+        <input type="email" name="email" id="email" required autocomplete="off">
 
         <label for="senha">Senha</label>
-        <input type="password" name="senha" id="senha" required>
+        <input type="password" name="senha" id="senha" required autocomplete="off">
 
         <button type="submit">Cadastrar</button>
     </form>
