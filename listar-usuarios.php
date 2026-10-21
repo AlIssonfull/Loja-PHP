@@ -28,7 +28,8 @@
         <div class="usuario">
             <div class="edit">
                 <img src="https://placehold.co/200" alt="" class="ft">
-                <img src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/vector-icons-4/edit-flwwwz417de3u3nzvstgpu.png/edit-qtep4ftgzlsz4sl22a43m9.png?_a=DATAiZAAZAA0" alt="">
+
+                <a href="editar-usuario.php?id=<?= $usuario->id ?>"><img src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/vector-icons-4/edit-flwwwz417de3u3nzvstgpu.png/edit-qtep4ftgzlsz4sl22a43m9.png?_a=DATAiZAAZAA0" alt=""></a>
             </div>
 
             <p>Id: <?= $usuario->id ?></p>
