@@ -44,7 +44,7 @@ $usuario = $resultado->fetch_object();
 
         <div>
             <button type="submit">Editar</button>
-            <button type="submit">Excluir</button>
+            <a href="excluir-usuario.php?id=<?= $usuario->id ?>">Excluir</a>
         </div>
     </form>
 </body>
