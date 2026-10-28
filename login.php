@@ -19,11 +19,6 @@ require "./data/conexao.php";
     <div class="form">
         <form method="POST">
             <div>
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" autocomplete="off" required placeholder="Coloque seu nome">
-            </div>
-
-            <div>
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email" autocomplete="off" required placeholder="Coloque seu email">
             </div>
