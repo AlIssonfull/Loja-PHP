@@ -1,3 +1,8 @@
+<?php 
+require "./data/conexao.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -15,17 +20,17 @@
         <form method="POST">
             <div>
                 <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" autocomplete="off" required>
+                <input type="text" name="nome" id="nome" autocomplete="off" required placeholder="Coloque seu nome">
             </div>
 
             <div>
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" autocomplete="off" required>
+                <input type="email" name="email" id="email" autocomplete="off" required placeholder="Coloque seu email">
             </div>
 
             <div>
                 <label for="senha">Senha:</label>
-                <input type="password" name="senha" id="senha" autocomplete="off" required>
+                <input type="password" name="senha" id="senha" autocomplete="off" required placeholder="Coloque sua senha">
             </div>
 
             <div><button type="submit">Entrar</button></div>
