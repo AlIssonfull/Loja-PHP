@@ -1,29 +1,11 @@
-<?php include "./data/produtos.php" ?>
-<!DOCTYPE html>
-<html lang="pt-br">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <title>Document</title>
-</head>
+session_start();
 
-<body>
-    <?php include "./view/header.php" ?>
-    <div class="produtos">
-        <?php foreach ($produtos as $produto): ?>
-            <div class="produto">
-                <img src="<?= $produto->imagem; ?>" alt="">
-                <h2><?= $produto->nome; ?></h2>
-                <p><?= $produto->descricao; ?></p>
-                <a href="produto.php?id=<?= $produto->id ?>">Ver mais</a>
-            </div>
-        <?php endforeach; ?>
-    </div>
-    <?php include "./view/footer.php" ?>
-</body>
+if(isset($_SESSION["usuario_id"])){
+    header("Location: /produtos.php");
+} else {
+    header("Location: /login.php");
+}
 
-</html>
+exit;

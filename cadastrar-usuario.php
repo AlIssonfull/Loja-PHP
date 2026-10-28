@@ -1,4 +1,6 @@
-<?php require "./data/conexao.php";
+<?php
+require "./data/conexao.php";
+require "./data/auth.php";
 $mensagem_erro = "";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -50,8 +52,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <button type="submit">Cadastrar</button>
     </form>
 
-    <?php if($mensagem_erro): ?> 
-        <p><?= $mensagem_erro ?></p> 
+    <?php if ($mensagem_erro): ?>
+        <p><?= $mensagem_erro ?></p>
     <?php endif; ?>
 </body>
 

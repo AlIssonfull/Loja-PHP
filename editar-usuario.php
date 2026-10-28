@@ -1,4 +1,6 @@
-<?php require "./data/conexao.php";
+<?php
+require "./data/conexao.php";
+require "./data/auth.php";
 $id = $_GET["id"] ?? 0;
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nome = $_POST["nome"];
